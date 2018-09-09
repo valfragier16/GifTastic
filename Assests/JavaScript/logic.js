@@ -1,6 +1,6 @@
 $(document).ready(function(event){
 	// Initial array of women
-	var women = ["Michelle Obama", "Ruth Bader Ginsburg", "Rosa Parks", "Chimamanda Ngozi Adichie", "Frida Kahlo"]; 
+	var women = ["Michelle Obama", "Ruth Bader Ginsburg", "Beyonce", "Chimamanda Ngozi Adichie", "Frida Kahlo"]; 
 	 
 
 	function search () {
