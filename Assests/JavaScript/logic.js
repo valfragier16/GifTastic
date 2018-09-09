@@ -5,7 +5,7 @@ $(document).ready(function(event){
 
 	function search () {
 		// Storing our giphy API for a search for anything/anyone
-		var limits = 10 ; 
+		var limits = 15 ; 
 		var key = "vYTrQMlbi3VzLIsdjs9Qs2a3BGUqMUXU" ; 
 		var search = $(this).attr("data-name");
 		var queryURL = "https://api.giphy.com/v1/gifs/search?q="+ search + "&api_key=" + key + "&limit=" + limits;
