@@ -1,9 +1,14 @@
-#header {
-	background-color: #e50914;
-	color: #ffffff;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 15px;
-	font-family: "Carrois Gothic SC", sans-serif;
+.tabs {
+	margin: 2%;
 }
 
+.holders {
+	display:inline-block;
+	margin-left: 2%; 
+}
+
+body{
+	background-image: url("../Images/million-women-march.jpg");
+	text-align: center;
+	background-size: 100%;
+}
