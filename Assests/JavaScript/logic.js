@@ -21,22 +21,24 @@ $(document).ready(function(event){
 			// After the data form the AJAX equest comes back
 			.then(function(response){
 			console.log(response); 
-			for (var j = 0 ; j < limits ; j++) {
+			for (var x = 0 ; x < limits ; x++) {
 			
 				var holder = $("<div>");
 				holder.addClass("holders"); 
 				console.log(holder)
+
+
 				var stillImg = $("<img>").attr({
-					"src": response.data[j].images.fixed_height_still.url, 
-					"data-still": response.data[j].images.fixed_height_still.url, 
-					"data-animate": response.data[j].images.fixed_height.url, 
+					"src": response.data[x].images.fixed_height_still.url, 
+					"data-still": response.data[x].images.fixed_height_still.url, 
+					"data-animate": response.data[x].images.fixed_height.url, 
 					"data-state": "still", 
 					"class": "pics"
 				});
 			
 					console.log(stillImg); 
 
-				var ratings = $("<p>").text("Ratings: " + response.data[j].rating);
+				var ratings = $("<p>").text("Ratings: " + response.data[x].rating);
 					console.log(ratings)
 
 				$(holder).append(stillImg); 
