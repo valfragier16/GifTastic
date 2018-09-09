@@ -4,18 +4,22 @@ $(document).ready(function(event){
 	 
 
 	function search () {
-
+		// Storing our giphy API for a search for anything/anyone
 		var limits = 10 ; 
 		var key = "vYTrQMlbi3VzLIsdjs9Qs2a3BGUqMUXU" ; 
 		var search = $(this).attr("data-name");
 		var queryURL = "https://api.giphy.com/v1/gifs/search?q="+ search + "&api_key=" + key + "&limit=" + limits;
 
+		// Empty giph - default page is empty
 		$(".giph").empty(); 
 
+		// Performing an AJAX GET request to our queryURL
 		$.ajax({
 			url: queryURL, 
 			method: "GET"
-		}).done(function(response){
+		})
+			// After the data form the AJAX equest comes back
+			.then(function(response){
 			console.log(response); 
 			for (var j = 0 ; j < limits ; j++) {
 			
