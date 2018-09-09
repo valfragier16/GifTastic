@@ -41,10 +41,12 @@ $(document).ready(function(event){
 				var ratings = $("<p>").text("Ratings: " + response.data[x].rating);
 					console.log(ratings)
 
+				
 				$(holder).append(stillImg); 
 				$(holder).append(ratings); 
 
-				$(".giph").append(holder); 
+				// Prepending the image to the page
+				$(".giph").prepend(holder); 
 
 				loop(); 
 
@@ -70,11 +72,13 @@ $(document).ready(function(event){
 
 		};
 	};
-
+	
+		// Event listener fo our add-button: Click event - button for the searched role model to pop up in jumbotron
 		$("#add-women").on("click", function (event) {
 
 			event.preventDefault();
 			var userAdd = $("#women-input").val().trim()
+			// Add button
 			women.push(userAdd);  
 
 			
@@ -83,6 +87,7 @@ $(document).ready(function(event){
 		
 		}); 
 
+		// Function to contorl giphs
 		function play () {
 		 	var state = $(this).attr("data-state"); 
           		console.log("Initial State: " + state)
