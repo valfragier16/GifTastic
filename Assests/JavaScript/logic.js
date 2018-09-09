@@ -1,5 +1,5 @@
 $(document).ready(function(event){
-
+	// Initial array of women
 	var women = ["Michelle Obama", "Ruth Bader Ginsburg", "Rosa Parks", "Chimamanda Ngozi Adichie", "Frida Kahlo"]; 
 	 
 
