@@ -1,20 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>GifTastic</title>
 
+    <link rel="stylesheet" href="Assests/CSS/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
 
 </head>
+
 <body>
+    <br>
     
-    <div id =""
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+    </div>
+    
+    <form class="form-inline" id="netflixSearch">
+      <div class="form-group">
+        <label for="netflixInput">Search for Inpirational Women</label>
+        <input type="text" id="famousWomen">
+      </div>
+
+      <!-- Button triggers show to be added -->
+      <input id="addShow" type="submit" value="submit">
+    </form>
+    
+    <div class="row">
+      <div class="container">
+        <div class="btn-group inline pull-left">
+          <button class="btn btn-primary" id="show" data-search="Michelle Obama">Michelle Obama</button>
+          <button class="btn btn-primary" id="show" data-search="ruth Bader Ginsburg">Ruth Bader Ginsburg</button>
+          <button class="btn btn-primary" id="show" data-search="Rosa Parks">Rosa Parks</button>
+          <button class="btn btn-primary" id="show" data-search="Frida Kahlo">Frida Kahlo</button>
+          <button class="btn btn-primary" id="show" data-search="Chimamanda Ngozi Adichie">Chimamanda Ngozi Adichie</button>
+    
+          <div id="myButtons"></div>
+        </div> <!--end of button group -->
+      </div> <!--end of container -->
+    </div> <!--end of row -->
+    
+    
+    <div class="row">
+      <div class="container">
+          <span><div id="gifArea"></div></span>
+      </div> <!--end of container -->
+    </div> <!-- end of row  -->
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
+    <!-- jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- TRIVIA APP JS -->
+    <script type="text/javascript" src="Assests/JavaScript/logic.js"></script>
     
 </body>
 </html>
