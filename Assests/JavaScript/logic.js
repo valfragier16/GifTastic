@@ -28,7 +28,7 @@ $(document).ready(function(event){
 				holder.addClass("holders"); 
 				console.log(holder)
 
-
+				// Giphy 'still'
 				var stillImg = $("<img>").attr({
 					"src": response.data[x].images.fixed_height_still.url, 
 					"data-still": response.data[x].images.fixed_height_still.url, 
